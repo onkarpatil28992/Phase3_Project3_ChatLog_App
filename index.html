@@ -17,15 +17,18 @@
         height: 300px;
       }
       #body {
-        background: linear-gradient(to right, rgb(42, 98, 202), rgb(231, 162, 173));
+        background: linear-gradient(to right, rgb(104, 161, 226), rgb(231, 162, 173));
+      }
+      #field {
+        background: linear-gradient(to right, rgb(77, 210, 203), rgba(220, 153, 228, 0.479));
       }
     </style>
   </head>
   <body id="body">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 offset-md-3 col-sm-12">
-          <h1 class="text-center m-5 text-warning">CHAT APP</h1>
+        <div class="col-md-12  col-sm-12 mt-5 " id="field">
+          <h1 class="text-center m-5 text-primary text-uppercase">Chat Log</h1>
           <div id="status"></div>
           <div id="chat">
             <input
@@ -47,20 +50,18 @@
 
             <div class="text-center text-capitalise text-dark">
               <h5>!! Press Enter to Send !!</h5>
-            </div>
-          </div>
-          <div>
-            <span class="col-md-6 offset-md-3 col-sm-12">
-              <a href="chats.csv"
-                ><button class="btn btn-danger m-3 container-fluid">
-                  Download
-                </button></a
+              <span class="">
+                <a href="chats.csv"
+                  ><button class="btn btn-danger m-3 container-fluid">
+                    Download
+                  </button></a
+                >
+                <!--https://www.bezkoder.com/node-js-export-mongodb-csv-file/-->
+                <button id="clear" class="btn btn-danger m-3 container-fluid">
+                  Clear
+                </button></span
               >
-              <!--https://www.bezkoder.com/node-js-export-mongodb-csv-file/-->
-              <button id="clear" class="btn btn-danger m-3 container-fluid">
-                Clear
-              </button></span
-            >
+            </div>
           </div>
         </div>
       </div>
